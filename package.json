@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --progress --colors --watch",
+    "prepublish": "npm build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
