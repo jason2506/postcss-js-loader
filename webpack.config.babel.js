@@ -35,13 +35,13 @@ export default {
   },
 
   externals: {
-    'loader-utils': 'loaderUtils',
-    'postcss': 'postcss',
-    'postcss-js': 'postcssJs',
-    'webpack/lib/node/NodeTemplatePlugin': 'NodeTemplatePlugin',
-    'webpack/lib/node/NodeTargetPlugin': 'NodeTargetPlugin',
-    'webpack/lib/LibraryTemplatePlugin': 'LibraryTemplatePlugin',
-    'webpack/lib/SingleEntryPlugin': 'SingleEntryPlugin',
-    'webpack/lib/optimize/LimitChunkCountPlugin': 'LimitChunkCountPlugin',
+    'loader-utils': true,
+    'postcss': true,
+    'postcss-js': true,
+    'webpack/lib/node/NodeTemplatePlugin': true,
+    'webpack/lib/node/NodeTargetPlugin': true,
+    'webpack/lib/LibraryTemplatePlugin': true,
+    'webpack/lib/SingleEntryPlugin': true,
+    'webpack/lib/optimize/LimitChunkCountPlugin': true,
   },
 }
