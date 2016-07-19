@@ -5,3 +5,5 @@ node_modules
 npm-debug.log
 
 lib
+example/bundle.js
+example/bundle.js.map

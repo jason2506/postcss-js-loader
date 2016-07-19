@@ -1,0 +1,15 @@
+{
+  "name": "postcss-js-loader-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
+    "postcss-js-loader": "../",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}

@@ -1,2 +1,5 @@
 node_modules
+
 lib
+example/bundle.js
+example/bundle.js.map
