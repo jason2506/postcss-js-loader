@@ -1,3 +1,5 @@
+/* eslint import/no-commonjs: [2, "allow-primitive-modules"] */
+
 /*
  * References:
  * - PostCSS Loader: https://github.com/postcss/postcss-loader/blob/1ab50d/index.js
@@ -26,16 +28,16 @@ const getRootCompilation = loader => {
 
 const produce = (loader, request, processor, callback) => {
   const outputFilename = 'postcss-js-output-filename'
-  const outputOptions = {filename: outputFilename}
+  const outputOptions = { filename: outputFilename }
   const childCompiler = getRootCompilation(loader)
     .createChildCompiler('postcss-js-compiler', outputOptions)
   childCompiler.apply(new NodeTemplatePlugin(outputOptions))
   childCompiler.apply(new LibraryTemplatePlugin(null, 'commonjs2'))
   childCompiler.apply(new NodeTargetPlugin())
-  childCompiler.apply(new SingleEntryPlugin(loader.context, `!!${ request }`))
-  childCompiler.apply(new LimitChunkCountPlugin({maxChunks: 1}))
+  childCompiler.apply(new SingleEntryPlugin(loader.context, `!!${request}`))
+  childCompiler.apply(new LimitChunkCountPlugin({ maxChunks: 1 }))
 
-  const subCache = `subcache ${ __dirname } ${ request }`
+  const subCache = `subcache ${__dirname} ${request}`
   childCompiler.plugin('compilation', compilation => {
     if (compilation.cache) {
       if (!compilation.cache[subCache]) {

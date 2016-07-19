@@ -7,6 +7,7 @@
     "build": "webpack",
     "watch": "webpack --progress --colors --watch",
     "prepublish": "npm build",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,7 +34,10 @@
     "webpack": "^1.13.1"
   },
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0"
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^3.0.1",
+    "eslint-plugin-import": "^1.10.2"
   }
 }

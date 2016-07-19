@@ -20,7 +20,7 @@ export default {
   output: {
     library,
     libraryTarget: 'commonjs2',
-    filename: `${ library }.js`,
+    filename: `${library}.js`,
     path: libPath,
   },
 
@@ -36,7 +36,7 @@ export default {
 
   externals: {
     'loader-utils': 'loaderUtils',
-    postcss: 'postcss',
+    'postcss': 'postcss',
     'postcss-js': 'postcssJs',
     'webpack/lib/node/NodeTemplatePlugin': 'NodeTemplatePlugin',
     'webpack/lib/node/NodeTargetPlugin': 'NodeTargetPlugin',
