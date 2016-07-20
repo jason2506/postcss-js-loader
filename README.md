@@ -51,7 +51,7 @@ export default {
       {
         test: /\.css\.js$/,
         loader: 'style' +
-          '!css?modules&importLoaders=2' +
+          '!css?modules&importLoaders=1' +
           '!postcss-js'
       },
     ],
