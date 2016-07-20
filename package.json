@@ -1,0 +1,43 @@
+{
+  "name": "postcss-js-loader",
+  "version": "0.1.1",
+  "description": "PostCSS JS loader for webpack",
+  "main": "lib/postcss-js-loader.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --progress --colors --watch",
+    "prepublish": "npm build",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason2506/postcss-js-loader.git"
+  },
+  "author": "Chi-En Wu",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "loader",
+    "postcss",
+    "postcss-js",
+    "css-in-js"
+  ],
+  "bugs": {
+    "url": "https://github.com/jason2506/postcss-js-loader/issues"
+  },
+  "homepage": "https://github.com/jason2506/postcss-js-loader#readme",
+  "dependencies": {
+    "loader-utils": "^0.2.15",
+    "postcss": "^5.0.21",
+    "postcss-js": "^0.1.3",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^3.0.1",
+    "eslint-plugin-import": "^1.10.2"
+  }
+}
