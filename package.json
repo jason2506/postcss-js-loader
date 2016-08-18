@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "PostCSS JS loader for webpack",
   "main": "lib",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "babel ./src -d lib",
     "clean": "rimraf lib",
